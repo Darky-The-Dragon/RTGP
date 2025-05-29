@@ -1,0 +1,106 @@
+{
+	"folders": [
+		{
+			"name": "IncludeDir",
+			"path": "include"
+		},
+		{
+			"name": "lecture01",
+			"path": "lectures_final/lecture01"
+		},
+		{
+			"name": "lecture02",
+			"path": "lectures_final/lecture02"
+		},
+		{
+			"name": "lecture03a",
+			"path": "lectures_final/lecture03a"
+		},
+		{
+			"name": "lecture03b",
+			"path": "lectures_final/lecture03b"
+		},
+		{
+			"name": "lecture03c",
+			"path": "lectures_final/lecture03c"
+		},
+		{
+			"name": "lecture04a",
+			"path": "lectures_final/lecture04a"
+		},
+		{
+			"name": "lecture04b",
+			"path": "lectures_final/lecture04b"
+		},
+		{
+			"name": "lecture05a",
+			"path": "lectures_final/lecture05a"
+		},
+		{
+			"name": "lecture05b",
+			"path": "lectures_final/lecture05b"
+		},
+		{
+			"name": "lecture05c",
+			"path": "lectures_final/lecture05c"
+		},
+		{
+			"name": "lecture06a",
+			"path": "lectures_final/lecture06a"
+		},
+		{
+			"name": "lecture06b",
+			"path": "lectures_final/lecture06b"
+		},
+
+		{
+			"name": "work01",
+			"path": "work/work01"
+		},
+		{
+			"name": "work02",
+			"path": "work/work02"
+		},
+		{
+			"name": "work03",
+			"path": "work/work03"
+		},
+		{
+			"name": "work04",
+			"path": "work/work04"
+		},
+		{
+			"name": "work05a",
+			"path": "work/work05a"
+		},
+		{
+			"name": "work05b",
+			"path": "work/work05b"
+		},
+		{
+			"name": "work05c",
+			"path": "work/work05c"
+		},
+		{
+			"name": "work06a",
+			"path": "work/work06a"
+		},
+		{
+			"name": "work06b",
+			"path": "work/work06b"
+		},
+
+		{				{
+			"name": "test",
+			"path": "work/test"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"string": "cpp",
+			"iosfwd": "cpp",
+			"vector": "cpp",
+			"string.h": "c"
+		}
+	}
+}

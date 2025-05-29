@@ -1,0 +1,44 @@
+# Makefile for RTGP lab lecture exercises - Linux environment
+# author: Davide Gadia
+# Real-Time Graphics Programming - a.a. 2024/2025
+# Master degree in Computer Science
+# Universita' degli Studi di Milano
+#
+
+# NOTE ON THE USE OF BULLET LIBRARY ON LINUX:
+# The linux version of bullet on vcpkg has an issue related to the convolute hierarchy of header inclusions of bullet. See https://github.com/microsoft/vcpkg/issues/7877 for details.
+# As a consequence, to use it on linux the easier solution is: 
+# - to use the bullet version installed using sudo apt-get install libbullet-dev. The libraries were copied locally in the repository folder
+# - to add an additional include path to point directly to the root of the bullet headers hierarchy
+
+# name of the file
+FILENAME = work06b
+
+CC = gcc
+CXX = g++
+
+# Include paths
+IDIR = ../../include/
+IDIR_BULLET = ../../include/bullet/ # this additional path is required in order to use bullet
+
+
+# Libraries path
+LDIR = ../../libs/linux
+
+# compiler flags:
+CXXFLAGS  = -g -O0 -x c++ -Wall -Wno-invalid-offsetof -std=c++11 -I$(IDIR) -I$(IDIR_BULLET) # note the additional include at the end
+
+# linker flags:
+LDFLAGS = -L$(LDIR) -lglfw3 -lassimp -lz -lminizip -lkubazip -lpoly2tri -lpolyclipping -ldraco -lpugixml -lBullet3Common -lBulletCollision -lBulletDynamics -lLinearMath
+
+SOURCES = ../../include/glad/glad.c $(FILENAME).cpp
+
+TARGET = $(FILENAME).out
+
+.PHONY : all
+all:
+	$(CXX) $(CXXFLAGS) $(SOURCES) $(LDFLAGS) -o $(TARGET)
+
+.PHONY : clean
+clean :
+	-rm $(TARGET)
